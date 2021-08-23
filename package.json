@@ -1,0 +1,21 @@
+{
+  "name": "full-page-site-scroller",
+  "version": "1.0.0",
+  "description": "Allows to scroll website's page as slide-page.",
+  "main": "full_page_slider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {},
+  "keywords": [
+    "slide",
+    "fullpage",
+    "scroll"
+  ],
+  "author": "Dmitriy Zhuravlev",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1"
+  }
+}

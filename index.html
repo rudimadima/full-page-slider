@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./full_page_slider.css" rel="stylesheet" type="text/css">
+<title>Скрипт: постраничный слайдер (перемотка)</title>
+</head>
+<body>
+
+<div class="fullSizeBlock">
+	<div class="oneSlide content1">
+		<h2 class="oneSlideTitle">Постраничный слайдер</h2>
+		Мой очень лёгкий постраничный слайдер для скролла сайта отдельными визуальными блоками размером с экран.<br>
+		<br>
+		В каждую страницу-слайд можно вставлять любой контент &mdash; лишь бы влезло.<br>
+		<br>
+		Скроллить слайды можно колёсиком мыши, тачем на тачскринах и некоторыми клавишами клавиатуры.<br>
+		<br>
+		Листайте дальше описание.
+	</div>
+</div>
+
+<div class="fullSizeBlock">
+	<div class="oneSlide content2">
+		<h2 class="oneSlideTitle">Использование</h2>
+		Для использования необходимо поставить на страницу разметку:
+		<div style="background-color: #eaeae0; color: black; width: 280px; font-size: 18px; padding: 5px; margin: 5px 0px;">
+			&lt;div class="fullSizeBlock"&gt;&lt;/div&gt;<br>
+			&lt;div class="fullSizeBlock"&gt;&lt;/div&gt;<br>
+			&lt;div class="fullSizeBlock"&gt;&lt;/div&gt;<br>
+			<br>
+			&lt;div class="linksToSlides"&gt;&lt;/div&gt;
+		</div>
+		Каждый блок - это одна страница-слайд.<br>
+		<br>
+		Далее нужно наполнить все fullSizeBlock-блоки вашим контентом. А JS-скрипт всё сделает сам!<br>
+		<br>
+		Т.к. весь код в IIFE, то конфликта имён переменных не будет.
+	</div>
+</div>
+
+<div class="fullSizeBlock">
+	<div class="oneSlide content3">
+		<h2 class="oneSlideTitle">Использование мыши</h2>
+		Одно движение колёсика мыши листает слайд экрана целиком вверх или вниз.<br>
+		<br>
+		Использование центральной кнопки не отключено - страницу можно перемотать частично.<br>
+		<br>
+		После такой неполной перемотки автоматически высчитывается "активный" слайд в боковом блоке и подсвечивается нужный пункт.
+	</div>
+</div>
+
+<div class="fullSizeBlock">
+	<div class="oneSlide content4">
+		<h2 class="oneSlideTitle">Использование на смартфоне</h2>
+		Скрипт поддерживает свайпы вверх и вниз.<br>
+		<br>
+		Разные мобильные браузеры по-разному обрабатывают скролл страниц тач-движением. Поэтому браузерный скролл во время тач-движения полностью отключён и имитируется.
+	</div>
+</div>
+
+<div class="fullSizeBlock">
+	<div class="oneSlide content5">
+		<h2 class="oneSlideTitle">Использование клавиатуры</h2>
+		Клавиши Page Down и Page Up листают по одному слайду.<br>
+		<br>
+		Остальные клавиши - Home, End, стрелки и пробел оставлены "как есть", чтобы пользователь всё-таки мог сделать неполную перемотку.<br>
+	</div>
+</div>
+
+<div class="fullSizeBlock">
+	<div class="oneSlide content6">
+		<h2 class="oneSlideTitle">Добавление подписей в боковые ссылки</h2>
+		Если требуется добавить текст внутрь боковых ссылок или всплывающие подсказки, то нужно поработать с функцией fillSideLinks(), которая как раз создаёт эти ссылки.<br>
+		<br>
+		Например, можно каждому блоку с классом fullSizeBlock добавить data-атрибут, а потом из него брать значение для текста подсказки.
+	</div>
+</div>
+
+<div class="fullSizeBlock">
+	<div class="oneSlide content7">
+		<h2 class="oneSlideTitle">Не забывайте про разные размеры экранов</h2>
+		Всегда нужно помнить, что на смартфонах меньше места на экране.<br>
+		<br>
+		Чтобы избежать проблем, можно, например, использовать относительные единицы измерения вроде процентов или em. Либо использовать размеры относительно viewport (vh и vw).
+	</div>
+</div>
+
+<div class="linksToSlides"></div>
+
+<script src="./full_page_slider.js"></script>
+
+</body>
+</html>
